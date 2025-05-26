@@ -344,21 +344,22 @@
 
   </script>
   <script type="module">
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js";
-    import { getDatabase, ref, set, get, child, onValue, remove } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-database.js";
+
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
+    import { getDatabase, ref, set, get, child, onValue, remove } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js";
 
     const firebaseConfig = {
-  apiKey: "AIzaSyAPDz581tFQokpycbIvqpPq646RNbBF1FY",
-  authDomain: "haru-d1a56.firebaseapp.com",
-  databaseURL: "https://haru-d1a56-default-rtdb.asia-southeast1.firebasedatabase.app",
-  projectId: "haru-d1a56",
-  storageBucket: "haru-d1a56.firebasestorage.app",
-  messagingSenderId: "830439929712",
-  appId: "1:830439929712:web:c8cb97d638d08b63a1c1b5"
-};
+        apiKey: "AIzaSyAPDz581tFQokpycbIvqpPq646RNbBF1FY",
+        authDomain: "haru-d1a56.firebaseapp.com",
+        databaseURL: "https://haru-d1a56-default-rtdb.asia-southeast1.firebasedatabase.app",
+        projectId: "haru-d1a56",
+        storageBucket: "haru-d1a56.firebasestorage.app",
+        messagingSenderId: "830439929712",
+        appId: "1:830439929712:web:c8cb97d638d08b63a1c1b5"
+    };
 
-const app = initializeApp(firebaseConfig);  
-const db = getDatabase(app);                
+    const app = initializeApp(firebaseConfig);
+    const db = getDatabase(app);
 
     function showTab(tabId) {
       // 모든 탭 숨기기
